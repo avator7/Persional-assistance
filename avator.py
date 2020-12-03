@@ -9,7 +9,7 @@ import smtplib
 engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
 # print(voices[1].id)
-engine.setProperty('voice', voices[1].id)
+engine.setProperty('voice', voices[0].id)
 
 
 def speak(audio):
@@ -95,5 +95,9 @@ if __name__ == "__main__":
 
         elif 'thank you'in query:
             speak("your welcome sir")
+
+        elif 'thanks' in query:
+            speak("your welcome sir")
+        
 
             
